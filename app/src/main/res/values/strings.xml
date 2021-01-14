@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Caffein</string>
+    <string name="moto">Great App Coffee Maker Application</string>
+    <string name="pilih_kopi">Pilih Kopi Anda !</string>
+    <string name="title_name">Title Name</string>
+    <string name="item_detail">item detail</string>
+    <string name="show">Show</string>
+</resources>

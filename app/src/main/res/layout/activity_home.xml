@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/second_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/radius">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/coffeeChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_kopi"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_alignParentStart="true"/>
+        <ImageButton
+            android:id="@+id/gridLayout"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@null"
+            android:src="@drawable/ic_grid"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"/>
+        <ImageButton
+            android:id="@+id/CarViewLayout"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:background="@null"
+            android:src="@drawable/ic_card"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@+id/gridLayout"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/coffeeChoose"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_card_coffee"/>
+    </RelativeLayout>
+
+</LinearLayout>
