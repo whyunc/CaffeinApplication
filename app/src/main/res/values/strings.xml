@@ -5,4 +5,9 @@
     <string name="title_name">Title Name</string>
     <string name="item_detail">item detail</string>
     <string name="show">Show</string>
+    <string name="title_detail">Title Detail</string>
+    <string name="_3_5_minute">3-5 minute</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
 </resources>

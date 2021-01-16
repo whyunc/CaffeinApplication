@@ -23,8 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pilih_kopi"
-            android:textSize="12sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/robotobold"
+            android:textSize="14sp"
+            android:letterSpacing="0.05"
             android:layout_marginStart="30dp"
             android:layout_alignParentStart="true"/>
         <ImageButton

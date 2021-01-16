@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/tv_DetailIMG"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        tools:src="@color/second_caffein"/>
+
+    <LinearLayout
+        android:id="@+id/layout_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_DetailIMG"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/top_radius">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_detail"
+            android:letterSpacing="0.15"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/second_caffein"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_5_minute"
+                android:textSize="12sp"
+                android:fontFamily="@font/robotolight"
+                android:letterSpacing="0.05"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_time"
+                android:drawablePadding="4dp"/>
+            <TextView
+                android:id="@+id/detail_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot or Ice"
+                android:textSize="12sp"
+                android:fontFamily="@font/robotolight"
+                android:letterSpacing="0.05"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_break"
+                android:drawablePadding="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:lineSpacingExtra="3dp"
+            android:letterSpacing="0.05"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredients"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.10"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/detail_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. biji kopi \n2. grillan \n3. gula"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.05"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steps"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/detail_steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. giling biji kopi yang kasar hingga halus kaya paha dia \n2. panaskan aer biar mateng \n3. masukin gula biar manis"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

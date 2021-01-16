@@ -1,5 +1,6 @@
 package com.example.caffeinapplication
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,5 +40,19 @@ class CardViewCoffeeAdapter(private val ListCoffee: ArrayList<Coffee>): Recycler
 
         holder.titleCoffee.text = Coffee.title
         holder.detailCoffee.text = Coffee.detail
+        val mContext = holder.itemView.context
+
+        holder.btnShow.setOnClickListener {
+            val moveDetail = Intent(mContext, DetailActivity::class.java)
+            moveDetail.putExtra(DetailActivity.EXTRA_PHOTO, Coffee.photo)
+            moveDetail.putExtra(DetailActivity.EXTRA_TITLE, Coffee.title)
+            moveDetail.putExtra(DetailActivity.EXTRA_TIME, Coffee.time)
+            moveDetail.putExtra(DetailActivity.EXTRA_TYPE, Coffee.type)
+            moveDetail.putExtra(DetailActivity.EXTRA_DETAIL, Coffee.detail)
+            moveDetail.putExtra(DetailActivity.EXTRA_INGREDIENTS, Coffee.ingredients)
+            moveDetail.putExtra(DetailActivity.EXTRA_STEPS, Coffee.steps)
+            mContext.startActivity(moveDetail)
+        }
     }
+
 }
