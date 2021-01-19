@@ -44,13 +44,18 @@ class CardViewCoffeeAdapter(private val ListCoffee: ArrayList<Coffee>): Recycler
 
         holder.btnShow.setOnClickListener {
             val moveDetail = Intent(mContext, DetailActivity::class.java)
-            moveDetail.putExtra(DetailActivity.EXTRA_PHOTO, Coffee.photo)
-            moveDetail.putExtra(DetailActivity.EXTRA_TITLE, Coffee.title)
-            moveDetail.putExtra(DetailActivity.EXTRA_TIME, Coffee.time)
-            moveDetail.putExtra(DetailActivity.EXTRA_TYPE, Coffee.type)
-            moveDetail.putExtra(DetailActivity.EXTRA_DETAIL, Coffee.detail)
-            moveDetail.putExtra(DetailActivity.EXTRA_INGREDIENTS, Coffee.ingredients)
-            moveDetail.putExtra(DetailActivity.EXTRA_STEPS, Coffee.steps)
+            //moveDetail.putExtra(DetailActivity.EXTRA_PHOTO, Coffee.photo)
+            //moveDetail.putExtra(DetailActivity.EXTRA_TITLE, Coffee.title)
+            //moveDetail.putExtra(DetailActivity.EXTRA_TIME, Coffee.time)
+            //moveDetail.putExtra(DetailActivity.EXTRA_TYPE, Coffee.type)
+            //moveDetail.putExtra(DetailActivity.EXTRA_DETAIL, Coffee.detail)
+            //moveDetail.putExtra(DetailActivity.EXTRA_INGREDIENTS, Coffee.ingredients)
+            //moveDetail.putExtra(DetailActivity.EXTRA_STEPS, Coffee.steps)
+            
+            //Penggunaan Parcelable
+            moveDetail.putExtra(DetailActivity.EXTRA_COFFEE, Coffee)
+
+            //aktifasi intent
             mContext.startActivity(moveDetail)
         }
     }
